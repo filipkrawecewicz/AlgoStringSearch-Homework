@@ -1,0 +1,28 @@
+﻿<Window x:Class="StringSearch.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:StringSearch"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Background="#FFCCCCCC">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="44*"/>
+            <RowDefinition Height="173*"/>
+        </Grid.RowDefinitions>
+        <Label x:Name="BruteLbl" Content="--" HorizontalAlignment="Left" Margin="400,54,0,0" VerticalAlignment="Top" Height="35" Grid.Row="1"/>
+        <Button x:Name="SearchBtn" Content="Search" HorizontalAlignment="Left" Margin="538,88,0,0" VerticalAlignment="Top" Click="SearchBtn_Click" Height="30" Width="110" Background="#FF46B7FF" FontSize="16" FontWeight="Bold" Grid.RowSpan="2"/>
+        <TextBox x:Name="SearchBox" HorizontalAlignment="Left" Margin="107,88,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="370" Height="30" FontSize="16" FontWeight="Normal" Text="with" Grid.RowSpan="2"/>
+        <Label x:Name="AlgoLbl1" Content="Brute Force" HorizontalAlignment="Left" Margin="112,54,0,0" VerticalAlignment="Top" Height="35" Width="96" FontSize="16" FontWeight="Bold" Grid.Row="1"/>
+        <Label x:Name="AlgoLbl2" Content="KMP" HorizontalAlignment="Left" Margin="113,112,0,0" VerticalAlignment="Top" Width="78" FontSize="16" FontWeight="Bold" Grid.Row="1" Height="34"/>
+        <Label x:Name="KMPLbl" Content="--" HorizontalAlignment="Left" Margin="400,116,0,0" VerticalAlignment="Top" Grid.Row="1" RenderTransformOrigin="0.766,0.644" Height="29"/>
+        <Label x:Name="AlgoLbl3" Content="Boyer-Moore" HorizontalAlignment="Left" Margin="113,169,0,0" VerticalAlignment="Top" FontSize="16" FontWeight="Bold" Grid.Row="1" Height="34"/>
+        <Label x:Name="BMLbl" Content="--" HorizontalAlignment="Left" Margin="400,174,0,0" VerticalAlignment="Top" Grid.Row="1" Height="29"/>
+        <Label x:Name="AlgoLbl4" Content="Rabin-Karp" HorizontalAlignment="Left" Margin="112,223,0,0" VerticalAlignment="Top" FontSize="16" FontWeight="Bold" Grid.Row="1" Height="34"/>
+        <Label Content="Type your search here:" HorizontalAlignment="Left" Margin="107,60,0,0" Height="28" VerticalAlignment="Top"/>
+        <Label Content="Search String Program" HorizontalAlignment="Left" Margin="107,10,0,0" VerticalAlignment="Top" FontSize="22" FontFamily="Arial Black"/>
+        <Label x:Name="RKLbl" Content="--" HorizontalAlignment="Left" Margin="400,227,0,0" Grid.Row="1" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>
